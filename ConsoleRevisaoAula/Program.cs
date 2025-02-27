@@ -12,7 +12,7 @@
 
             double media = (nota1 + nota2) / 2;
 
-            if (media >= 7)
+            if (media >= 7) 
             {
                 Console.WriteLine("Aprovado");
             }
