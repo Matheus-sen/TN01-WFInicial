@@ -90,6 +90,7 @@
             Controls.Add(txtNum1);
             Name = "FormEx3";
             Text = "FormEx3";
+            Load += FormEx3_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -34,5 +34,10 @@ namespace WFInicial
             MessageBox.Show(mensagem, "Info",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void FormEx3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
