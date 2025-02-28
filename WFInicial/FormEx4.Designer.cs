@@ -109,6 +109,7 @@
             Controls.Add(txtNum1);
             Name = "FormEx4";
             Text = "FormEx4";
+            Load += FormEx4_Load;
             ResumeLayout(false);
             PerformLayout();
         }

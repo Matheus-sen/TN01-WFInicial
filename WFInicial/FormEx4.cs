@@ -17,7 +17,7 @@ namespace WFInicial
             InitializeComponent();
         }
 
-      
+
 
         private void btnMaior_Click(object sender, EventArgs e)
         {
@@ -34,5 +34,9 @@ namespace WFInicial
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        private void FormEx4_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
