@@ -7,7 +7,7 @@
             Console.Write("Digite o 1º número: ");
             int num1 = int.Parse(Console.ReadLine()!);
             Console.Write("Digite o 2º número: ");
-            int num2 = int.Parse(Console.ReadLine()!);
+            int num2 = Convert.ToInt32(Console.ReadLine());
 
             int maior = Math.Max(num1, num2);
 
