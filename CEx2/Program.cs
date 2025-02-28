@@ -44,6 +44,7 @@ namespace CEx2
                     Console.WriteLine("Sabado");
                     break;
                 default:
+                    Console.WriteLine("Opção inválido");
                     break;
             }
         }
