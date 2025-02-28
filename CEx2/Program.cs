@@ -18,7 +18,7 @@ namespace CEx2
 --------------------------------------
             ";
             Console.WriteLine(menu);
-            byte opcao = byte.Parse(Console.ReadLine()!);
+            byte opcao = byte.Parse(Console.ReadLine()!); //byte, trabalha com números pequenos e sem sinal. ! - 
 
             switch (opcao)
             {
@@ -44,7 +44,7 @@ namespace CEx2
                     Console.WriteLine("Sabado");
                     break;
                 default:
-                    Console.WriteLine("Opção inválido!");
+                    Console.WriteLine("Opção inválida!");
                     break;
             }
         }
