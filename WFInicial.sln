@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEx5", "CEx5\CEx5.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEx6", "CEx6\CEx6.csproj", "{BB3B5B40-DAE6-40BE-B8CC-D7CAA1C0C9F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CEx7", "CEx7\CEx7.csproj", "{D00F2D5D-5FD5-4F5F-98F9-2C8ABB6A37D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{BB3B5B40-DAE6-40BE-B8CC-D7CAA1C0C9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB3B5B40-DAE6-40BE-B8CC-D7CAA1C0C9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB3B5B40-DAE6-40BE-B8CC-D7CAA1C0C9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D00F2D5D-5FD5-4F5F-98F9-2C8ABB6A37D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D00F2D5D-5FD5-4F5F-98F9-2C8ABB6A37D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D00F2D5D-5FD5-4F5F-98F9-2C8ABB6A37D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D00F2D5D-5FD5-4F5F-98F9-2C8ABB6A37D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
