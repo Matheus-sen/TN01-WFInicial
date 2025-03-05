@@ -23,6 +23,7 @@ namespace WFInicial
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             int quantVetor = NomeProdutos.Length; //length mostra o item na posição 1 e não 0
+
         }
     }
 }

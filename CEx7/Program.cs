@@ -4,34 +4,26 @@
     {
         static void Main(string[] args)
         {
-            string produto;
+            string produtoMaisBarato = "";
+            double valorMaisBarato = double.MaxValue;
 
 
-            for (int i = 1; i < 6; i++)
+            for (int i = 1; i <= 6; i++)
             {
-                Console.WriteLine("Digite o " + i + "º produto: ");
+                Console.WriteLine($"Digite o {i}º produto: ");
+                string produto = Console.ReadLine();
 
-                Console.WriteLine("Digite o valor deste produto: ");
+                Console.WriteLine($"Digite o valor do produto {i}: ");
+                double valor = double.Parse(Console.ReadLine());
+
+                if (valor < valorMaisBarato)
+                {
+                    valorMaisBarato = valor;
+                    produtoMaisBarato = produto;
+                }
 
             }
+            Console.Write($"o produto mais barato é:\n{produtoMaisBarato}, no valor de: {valorMaisBarato}");
         }
     }
 }
-
-//string nomeMaisBarato = "";
-//double precoMaisBarato = double.MaxValue;
-
-//for (int i = 0; i < 6; i++)
-//{
-//    Console.Write($"Digite o nome do produto {i + 1}: ");
-//    string nome = Console.ReadLine();
-
-//    Console.Write($"Digite o preço do produto {i + 1}: ");
-//    double preco = double.Parse(Console.ReadLine());
-
-//    if (preco < precoMaisBarato)
-//    {
-//        precoMaisBarato = preco;
-//        nomeMaisBarato = nome;
-//    }
-//}
