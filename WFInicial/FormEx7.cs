@@ -12,8 +12,9 @@ namespace WFInicial
 {
     public partial class FormEx7 : Form
     {
-        public string[] NomeProdutos = new string[6];
-        public double[] ValoresProdutos = new double[6];
+        public string[] ListaNomeProdutos = new string[6];
+        public double[] ListaValoresProdutos = new double[6];
+        public int contador = 0;
 
         public FormEx7()
         {
@@ -22,7 +23,20 @@ namespace WFInicial
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            int quantVetor = NomeProdutos.Length; //length mostra o item na posição 1 e não 0
+            contador = contador + 1;
+            ListaNomeProdutos[contador - 1] = txtProduto.Text;
+            ListaValoresProdutos[contador - 1] = Convert.ToDouble(txtValor.Text);
+
+            txtProduto.Text = "";
+            txtValor.Text = "";
+
+            if (contador == 6)
+            {
+                double menor = ListaValoresProdutos.Min();
+                int pos_Menor = Array.IndexOf(ListaValoresProdutos, menor);
+
+                MessageBox.Show($"O produto mais barato é {ListaValoresProdutos[pos_Menor]} de valor R$ {menor:02}");
+            }
 
         }
     }

@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             btnCadastrar = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtProduto = new TextBox();
+            txtValor = new TextBox();
             lblProduto = new Label();
             lblValor = new Label();
             SuspendLayout();
@@ -45,19 +45,19 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
-            // textBox1
+            // txtProduto
             // 
-            textBox1.Location = new Point(101, 50);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 1;
+            txtProduto.Location = new Point(101, 50);
+            txtProduto.Name = "txtProduto";
+            txtProduto.Size = new Size(100, 23);
+            txtProduto.TabIndex = 1;
             // 
-            // textBox2
+            // txtValor
             // 
-            textBox2.Location = new Point(101, 96);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 2;
+            txtValor.Location = new Point(101, 96);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(100, 23);
+            txtValor.TabIndex = 2;
             // 
             // lblProduto
             // 
@@ -84,8 +84,8 @@
             ClientSize = new Size(800, 450);
             Controls.Add(lblValor);
             Controls.Add(lblProduto);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtValor);
+            Controls.Add(txtProduto);
             Controls.Add(btnCadastrar);
             Name = "FormEx7";
             Text = "FormEx7";
@@ -96,8 +96,8 @@
         #endregion
 
         private Button btnCadastrar;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtProduto;
+        private TextBox txtValor;
         private Label lblProduto;
         private Label lblValor;
     }
