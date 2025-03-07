@@ -95,20 +95,14 @@ namespace WFInicial
         {
             double primeiroNumero = double.Parse(txtNum1.Text);
             double segundoNumero = double.Parse(txtNum2.Text);
-            double resultado = Math.Sqrt(primeiroNumero);
+            double resultado = Math.Pow(primeiroNumero, segundoNumero);
 
-            if (primeiroNumero < 0)
-            {
-                MessageBox.Show("Não é possível calcular uma raiz de um número negativo!", "Error:",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else
-            {
-                string message = $"A radiação do número {primeiroNumero} é: {resultado} ";
-
-                MessageBox.Show(message, "Resultado:",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            if (segundoNumero == 0)
+                    resultado = 1;
+                else
+                    resultado = Math.Pow(primeiroNumero, (1 / segundoNumero));
+                string mensagem = $"A Raiz de {primeiroNumero} ^ {segundoNumero} = {resultado}";
+                MessageBox.Show(mensagem, "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }
