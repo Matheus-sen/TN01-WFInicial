@@ -58,5 +58,13 @@ namespace WFInicial
             lblContador.Text = contagem.ToString();
             txtNumero.Text = "";
         }
+
+        private void txtNumero_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                btnAdicionar_Click(sender, e);
+            }
+        }
     }
 }

@@ -52,6 +52,7 @@
             txtNumero.Name = "txtNumero";
             txtNumero.Size = new Size(100, 23);
             txtNumero.TabIndex = 1;
+            txtNumero.KeyPress += txtNumero_KeyPress;
             // 
             // lblContador
             // 
